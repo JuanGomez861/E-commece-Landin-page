@@ -1,0 +1,11 @@
+.menu_cart{
+    position: absolute;
+    width: 300px;
+    z-index: 1;
+    border-radius: 8px;
+    box-shadow: 0 0 3px rgb(0,0,0,.5);
+    right: 0;
+    bottom: -20px;
+    transition: transform .5s ease;
+    transform: scale(1);
+}
