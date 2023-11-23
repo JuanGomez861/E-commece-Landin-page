@@ -1,5 +1,23 @@
 import './text.css'
-export function Description() {
+import { useState } from 'react'
+
+export function Description({setMenuProp}) {
+    const [numbersProducts, setNumbers] = useState(0)
+    let numero
+    const incrementar = () => {
+         numero=numbersProducts+1
+        setNumbers(numero)
+    }
+    const decrementar = () => {
+        if(numbersProducts==0)return;
+        numero=numbersProducts-1
+        setNumbers(numero)
+    }
+    const enviar=()=>{
+        if(numbersProducts==0)return;
+          setMenuProp(numbersProducts)
+    }
+
     return (
         <section className="text">
             <strong className="strong">SNEAKERS COMPANY</strong>
@@ -13,8 +31,8 @@ export function Description() {
 
 
             <div className="cta">
-                <section className="aumento"><figure className='icon'><img src="../images/icon-plus.svg" alt="" /></figure>0<figure className='icon'><img src="../images/icon-minus.svg" alt="" /></figure></section>
-                <a className="toogle"><figure><img src="../images/icon-cart.svg" alt="" className='toogle_img' /></figure>Add to cart</a>
+                <section className="aumento"><figure className='icon'><img src="../images/icon-plus.svg" alt="" onClick={incrementar} /></figure>{numbersProducts}<figure className='icon'><img src="../images/icon-minus.svg" alt="" onClick={decrementar} /></figure></section>
+                <a className="toogle" onClick={enviar}><figure><img src="../images/icon-cart.svg" alt="" className='toogle_img' /></figure>Add to cart</a>
             </div>
         </section>
     )

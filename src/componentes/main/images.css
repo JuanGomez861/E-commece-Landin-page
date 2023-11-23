@@ -1,37 +1,46 @@
-.figures{
+.figures {
     width: 50%;
     height: 400px;
     box-sizing: border-box;
 }
-.figure{
-   width: 100%;
-   height: 100%;
+
+.figure {
+    width: 100%;
+    height: 100%;
 }
-.figur_img{
+
+.figur_img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 15px;
 }
-.previous{
+
+.previous {
     margin-top: 20px;
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
-.figure_previous{
+
+.figure_previous {
     width: 20%;
     height: 20%;
     border-radius: 15px;
 }
-.img_previous{
+
+.img_previous {
     width: 100%;
     height: 100%;
     border-radius: 15px;
+    object-fit: cover;
 }
-.figure_previous:hover .img_previous{
+
+.figure_previous:hover .img_previous {
     opacity: .6;
 }
-.figure_previous:hover{
+
+.is-selected {
     outline: 4px solid hsl(26, 100%, 55%);
+    opacity: .6;
 }

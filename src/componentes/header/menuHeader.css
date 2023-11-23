@@ -27,6 +27,7 @@
         width: 50%;
         z-index: 10;
         transform: scale(0);
+        transition: transfrom .3s ease;
         justify-content: center;
     }
     .nav_visible{

@@ -1,0 +1,34 @@
+.products{
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.products p{
+    font-weight: 700;
+}
+.product{
+    display: flex;
+    gap: 15px;
+}
+.figure_product{
+    width:60px;
+    height:60px;
+}
+.figure_product img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.figure_delete{
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 5px;
+}
+.product_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px 0;
+}

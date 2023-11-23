@@ -16,12 +16,15 @@
   padding: 0;
   box-sizing: border-box;
 }
-body{
-  font-family: 'Kumbh Sans', sans-serif;
 
-}
-#root {
+body {
+  font-family: 'Kumbh Sans', sans-serif;
   width: 100%;
   height: 100%;
 
+}
+
+#root {
+  width: 100%;
+  height: 100%;
 }
