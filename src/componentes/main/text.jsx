@@ -1,18 +1,7 @@
 import './text.css'
-import { useState } from 'react'
-
+import { useCount } from '../header/hook/useCount';
 export function Description({setMenuProp}) {
-    const [numbersProducts, setNumbers] = useState(0)
-    let numero
-    const incrementar = () => {
-         numero=numbersProducts+1
-        setNumbers(numero)
-    }
-    const decrementar = () => {
-        if(numbersProducts==0)return;
-        numero=numbersProducts-1
-        setNumbers(numero)
-    }
+    let {numbersProducts,incrementar,decrementar}=useCount()
     const enviar=()=>{
         if(numbersProducts==0)return;
           setMenuProp(numbersProducts)
@@ -31,7 +20,7 @@ export function Description({setMenuProp}) {
 
 
             <div className="cta">
-                <section className="aumento"><figure className='icon'><img src="../images/icon-plus.svg" alt="" onClick={incrementar} /></figure>{numbersProducts}<figure className='icon'><img src="../images/icon-minus.svg" alt="" onClick={decrementar} /></figure></section>
+                <section className="aumento"><img src="../images/icon-minus.svg" alt="" onClick={decrementar} className='icon' />{numbersProducts}<img src="../images/icon-plus.svg" alt="" onClick={incrementar} className='icon'/></section>
                 <a className="toogle" onClick={enviar}><figure><img src="../images/icon-cart.svg" alt="" className='toogle_img' /></figure>Add to cart</a>
             </div>
         </section>
