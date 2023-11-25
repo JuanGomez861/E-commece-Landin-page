@@ -2,13 +2,13 @@ import { MenuCart } from './cart'
 import './header.css'
 import { useState } from 'react'
 import { Menu } from './menuHeader'
+import { useMenu } from './hook/useMenu'
 export function Header({menuProp}) {
     const [cart,setCart]=useState(false)
-    const [menu,setMenu]=useState(false)
-    const menuClass=`nav ${menu ? 'nav_visible': ''}`
-    const classIcon= `hamburgues ${menu ? 'close':''}`
+    const {menuClass,classIcon,gentareMenu}=useMenu()
+
     const men=()=>{
-        setMenu(!menu)
+        gentareMenu()
     }
     const handler=()=>{
         setCart(!cart)
