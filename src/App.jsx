@@ -8,7 +8,7 @@ export function App() {
 
   return (
     <>
-      <Header menuProp={menuProp}/>
+      <Header menuProp={menuProp} setMenuProp={setMenuProp}/>
       <Main  setMenuProp={setMenuProp}/>
       
     </>

@@ -1,8 +1,9 @@
 
 .header{
-    width: 80%;
+    width: 100%;
+    max-width: 1200px;
     display: flex;
-    padding: 20px;
+    padding: 10px 40px;
     margin: auto;
 }
 .header_section{
@@ -64,6 +65,7 @@
     .header{
         width: 100%;
         padding: 10px;
+        padding-bottom: 0;
     }
 
     .header_section{

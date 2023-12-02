@@ -21,7 +21,7 @@ export function Description({setMenuProp}) {
 
             <div className="cta">
                 <section className="aumento"><img src="../images/icon-minus.svg" alt="" onClick={decrementar} className='icon' />{numbersProducts}<img src="../images/icon-plus.svg" alt="" onClick={incrementar} className='icon'/></section>
-                <a className="toogle" onClick={enviar}><figure><img src="../images/icon-cart.svg" alt="" className='toogle_img' /></figure>Add to cart</a>
+                <a className="toogle" onClick={enviar}><figure><img src="../images/icon-cart_toogle.svg" alt="" className='toogle_img' /></figure>Add to cart</a>
             </div>
         </section>
     )

@@ -1,10 +1,9 @@
 .menu_cart{
     position: absolute;
-    width: 380px;
+    width: 350px;
     z-index: 11;
     border-radius: 8px;
     box-shadow: 0 0 2px 3px rgb(0,0,0,.5);
-    right: 0;
     padding: 25px  ;
     top: 95px;
     right:100px;
@@ -22,6 +21,7 @@
     margin-top: 15px;
     background-color: hsl(223, 64%, 98%);
 }
+
 .checkout{
     display: block;
     margin-top: 40px;
@@ -38,4 +38,11 @@
     height: 150px;
     text-align: center;
     line-height: 150px;
+}
+@media screen and (max-width:800px){
+    .menu_cart{
+        width: 70%;
+        
+        
+    }
 }

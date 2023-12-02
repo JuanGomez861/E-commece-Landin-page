@@ -1,12 +1,15 @@
 import { useState } from "react"
 export function useCount(){
-    let [numbersProducts, setNumbers] = useState(0)
+    const [numbersProducts, setNumbers] = useState(0)
     const incrementar = () => {
-        setNumbers(numbersProducts++)
+        setNumbers(numbersProducts+1)
     }
     const decrementar = () => {
-        setNumbers(numbersProducts--)
+    
+        setNumbers(numbersProducts-1)
     }
+
+    
 
     return {numbersProducts,incrementar,decrementar}
 }
